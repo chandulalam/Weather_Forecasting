@@ -22,3 +22,6 @@ A simple and interactive **Weather Forecast Web App** that provides real-time we
 ### 🔹 **5-Day Forecast**
 ![Screenshot (14)](https://github.com/user-attachments/assets/3fe7114c-40d6-4b37-9508-993164ef6574)
 
+### 1️⃣ Clone the Repository  
+```sh
+git clone https://github.com/chandulalam/Weather_Forecasting.git
