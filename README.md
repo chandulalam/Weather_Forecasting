@@ -17,8 +17,8 @@ A simple and interactive **Weather Forecast Web App** that provides real-time we
 ## 📸 Screenshots
 
 ### 🔹 **Main Interface**
-![Screenshot (14)](https://github.com/user-attachments/assets/3fe7114c-40d6-4b37-9508-993164ef6574)
+![Screenshot (13)](https://github.com/user-attachments/assets/2b26e989-77eb-451b-b227-46b4a3df4558)
 
 ### 🔹 **5-Day Forecast**
+![Screenshot (14)](https://github.com/user-attachments/assets/3fe7114c-40d6-4b37-9508-993164ef6574)
 
-![Screenshot (13)](https://github.com/user-attachments/assets/2b26e989-77eb-451b-b227-46b4a3df4558)
