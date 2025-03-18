@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Weather Forecast</h1>
+
+    <!-- Search Input -->
+    <div class="search">
+      <input type="text" id="cityInput" placeholder="Enter city name">
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <!-- Loader -->
+    <div id="loader"></div>
+
+    <!-- Weather Info -->
+    <div class="weather-info">
+      <h2 id="cityName"></h2>
+      <img id="weatherIcon" src="" alt="Weather Icon" style="display: none;">
+      <p id="temperature"></p>
+      <p id="description"></p>
+      <p id="humidity"></p>
+      <p id="windSpeed"></p>
+    </div>
+
+    <!-- 5-Day Forecast Section -->
+    <div id="forecast"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

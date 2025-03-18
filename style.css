@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  transition: background 0.5s ease-in-out;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  color: #fff;
+}
+
+/* Search Box */
+.search {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Loader */
+#loader {
+  display: none;
+  border: 6px solid rgba(255, 255, 255, 0.3);
+  border-top: 6px solid #007bff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Forecast Section */
+#forecast {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+.forecast-item {
+  flex: 1;
+  min-width: 120px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.forecast-item:hover {
+  transform: scale(1.05);
+}
+
+/* Background Themes */
+.sunny { background: linear-gradient(135deg, #ffcc00, #ff9900); }
+.cloudy { background: linear-gradient(135deg, #cfd9df, #e2ebf0); }
+.rainy { background: linear-gradient(135deg, #3a7bd5, #3a6073); }
+.snowy { background: linear-gradient(135deg, #83a4d4, #b6fbff); }
+.clear { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+    border-radius: 0;
+  }
+
+  .search {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #forecast {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .forecast-item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
